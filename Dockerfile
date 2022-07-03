@@ -1,1 +1,1 @@
-RUN apt-get -qqy update \
+apt-get update
