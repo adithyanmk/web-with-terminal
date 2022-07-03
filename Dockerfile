@@ -7,6 +7,6 @@ WORKDIR /test
 
 ENV PORT=$port
 
-RUN apt-get install nodejs
+RUN npm -v
 
 EXPOSE $PORT
