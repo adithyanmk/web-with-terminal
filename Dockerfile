@@ -7,6 +7,6 @@ WORKDIR /test
 
 ENV PORT=$port
 
-RUN apt-get update
+RUN chmod +x setup.sh
 
 EXPOSE $PORT
