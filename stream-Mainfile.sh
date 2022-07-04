@@ -11,7 +11,7 @@ VIDEO_SOURCE="/src/video/km_20220704_1080p.mp4"
 AUDIO_SOURCE="/src/audio/audio.mp3"
 
 ffmpeg \
-    -re -f lavfi -i "movie=filename=$VIDEO_SOURCE:loop=0, setpts=N/(FRAME_RATE*TB)" \
+    -re -f lavfi -i "movie=filename=$VIDEO_SOURCE:loop=1000, setpts=N/(FRAME_RATE*TB)" \
     -thread_queue_size 512 -i "$AUDIO_SOURCE" \
     -map 0:v:0 -map 1:a:0 \
     -map_metadata:g 1:g \
