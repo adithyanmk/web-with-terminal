@@ -5,10 +5,10 @@ FPS="24"
 QUAL="superfast"
 
 YOUTUBE_URL="rtmp://a.rtmp.youtube.com/live2"
-KEY="z5k3-8888-69qu-9999"
+KEY="bhga-sfzg-mm33-t5bt-2fkx"
 
-VIDEO_SOURCE="/src/video/live 2.mp4"
-AUDIO_SOURCE="/src/audio/Music 5h.mp3"
+VIDEO_SOURCE="/src/video/km_20220704_1080p.mp4"
+AUDIO_SOURCE="/src/audio/audio.mp3"
 
 ffmpeg \
     -re -f lavfi -i "movie=filename=$VIDEO_SOURCE:loop=0, setpts=N/(FRAME_RATE*TB)" \
